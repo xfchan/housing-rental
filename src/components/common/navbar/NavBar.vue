@@ -22,11 +22,11 @@ export default {
 .left,
 .right {
   width: 60px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 .center {
   flex: 1;
-  background-color: blue;
+  /* background-color: blue; */
   text-align: center;
 }
 </style>
