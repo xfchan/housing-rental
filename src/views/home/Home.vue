@@ -13,7 +13,11 @@
         <div slot="text">{{ i }}</div>
       </main-menu-item>
     </main-menu>
-    <card-switch :titles="cardswitchitem"></card-switch>
+    <card-switch
+      :titles="cardswitchitem"
+      class="home-cart-switch"
+    ></card-switch>
+    123
   </div>
 </template>
 
@@ -21,6 +25,7 @@
 import NavBar from "components/common/navbar/NavBar";
 import MainMenu from "components/common/mainmenu/MainMenu";
 import MainMenuItem from "components/common/mainmenu/MainMenuItem";
+import Swiper from "components/common/swiper/Swiper";
 import CardSwitch from "components/content/cardswitch/CardSwitch";
 
 import HomeSearch from "./childComps/HomeSearch";
@@ -33,15 +38,10 @@ export default {
         "推荐",
         "新房",
         "二手房",
-        "推荐",
-        "新房",
-        "二手房",
-        "推荐",
-        "新房",
-        "二手房",
-        "推荐",
-        "新房",
-        "二手房",
+        "租房",
+        "商业地产",
+        "海外地产",
+        "装修",
       ],
     };
   },
@@ -50,6 +50,7 @@ export default {
     MainMenu,
     MainMenuItem,
     CardSwitch,
+    Swiper,
     HomeSearch,
   },
 };
@@ -81,5 +82,8 @@ export default {
 }
 .main-menu {
   margin: 10px 0;
+}
+.home-cart-switch {
+  margin-bottom: 10px;
 }
 </style>

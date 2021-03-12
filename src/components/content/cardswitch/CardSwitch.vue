@@ -1,14 +1,16 @@
 <template>
   <div class="cart-switch">
-    <div v-for="item in titles" class="cart-switch-item">
-      <span>{{ item }}</span>
-    </div>
+    <swiper>
+      <div v-for="item in titles" class="swiper-slide">{{ item }}</div>
+    </swiper>
   </div>
 </template>
 
 <script>
+import Swiper from "components/common/swiper/Swiper";
 export default {
   name: "CardSwitch",
+  components: { Swiper },
   props: {
     titles: {
       type: Array,
@@ -22,10 +24,6 @@ export default {
 
 <style scoped>
 .cart-switch {
-  width: 200%;
-}
-.cart-switch-item {
-  float: left;
-  width: 50px;
+  width: 100%;
 }
 </style>

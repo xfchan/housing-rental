@@ -18,6 +18,7 @@ export default {
 .main-menu-item {
   position: relative;
   width: 20%;
+  /* 高度不能写死 */
   height: 70px;
   margin-top: 10px;
   background-color: var(--color-tint);
