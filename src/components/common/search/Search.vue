@@ -20,13 +20,11 @@ export default {
   left: 0;
   right: 0;
   overflow: hidden;
-  text-align: center;
   vertical-align: middle;
   border: none;
 }
 .search-center {
   flex: 1;
-  padding: 5px 0;
   margin: 0 15px;
 }
 </style>
