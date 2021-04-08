@@ -7,6 +7,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+// Vue实例可以作为事件总线
+Vue.prototype.$bus = new Vue()
+
 new Vue({
   router,
   store,

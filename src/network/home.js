@@ -4,6 +4,16 @@ import {
 
 export function getHomeMultiData() {
   return request({
-    url: '/home/multidata'
+    url: '/'
+  })
+}
+
+export function getHomeHouses(type, page) {
+  return request({
+    url: '/home/data',
+    params: {
+      type,
+      page
+    }
   })
 }

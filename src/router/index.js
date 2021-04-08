@@ -8,6 +8,8 @@ const Message = () => import('views/message/Message')
 const Recommend = () => import('views/recommend/Recommend')
 const Square = () => import('views/square/Square')
 const Profile = () => import('views/profile/Profile')
+const Register = () => import('views/register-login/Register')
+const Login = () => import('views/register-login/Login')
 
 const routes = [{
   path: '',
@@ -27,6 +29,12 @@ const routes = [{
 }, {
   path: '/profile',
   component: Profile
+}, {
+  path: '/register',
+  component: Register
+}, , {
+  path: '/login',
+  component: Login
 }, ]
 
 const router = new VueRouter({

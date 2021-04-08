@@ -58,6 +58,13 @@ a {
   float: right;
 }
 
+button {
+  border: 0;
+  outline: none;
+}
+
+
+
 /* 字体图标的配置  字体声明    */
 @font-face {
   font-family: 'icomoon';

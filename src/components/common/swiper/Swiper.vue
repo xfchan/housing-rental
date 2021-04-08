@@ -71,13 +71,19 @@ export default {
 }
 .swiper-contain {
   overflow: hidden;
+  display: flex;
+}
+.swiper-wrapper {
+  background-color: #fff;
 }
 .swiper-slide {
   padding: 10px 15px;
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
+  width: 33.333333333%;
+  text-align: center;
+
   box-sizing: border-box;
-  background-color: pink;
   font-size: 14px;
 }
 /* .swiper-scrollbar {

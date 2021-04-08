@@ -7,7 +7,7 @@
         @click="slideClick(index)"
         :class="{ active: index === currentIndex }"
       >
-        {{ item }}
+        {{ item.Name }}
       </div>
     </swiper>
   </div>
@@ -29,13 +29,16 @@ export default {
   data() {
     return {
       // 初始当前的点击
-      currentIndex: 1,
+      currentIndex: 0,
     };
+  },
+  beforeDestroy() {
+    console.log(this.titles);
   },
   methods: {
     slideClick(index) {
-      console.log(index);
       this.currentIndex = index;
+      this.$emit("tabClick", index);
     },
   },
 };
@@ -48,7 +51,7 @@ export default {
 .active {
   color: var(--color-tint);
   /* border-bottom: 1px solid var(--color-tint); */
-  font-size: 17px;
+  font-size: 18px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -56,8 +59,8 @@ export default {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 20px;
-  height: 3px;
+  width: 16px;
+  height: 2.5px;
   background-color: var(--color-tint);
   border-radius: 20%;
   bottom: 0;
